@@ -136,7 +136,9 @@ if option == 'About':
     base64_image = encode_image(image_path)
        
     #st.sidebar.image(prato,caption="",use_container_width=True)
-    st.markdown("### Dois agentes: um agente especialista em imagens, usando um modelo multimodal, descreve a imagem, focando apenas em alimentos. A descrição é analisada por agente nutricionista, que informa se alimento é saudável.")
+    st.markdown("### Dois agentes: um agente especialista em imagens e um agente nutricionista.")
+    st.markdown("### O primeiro descreve a imagem, focando apenas em alimentos.")
+    st.markdown("### O segundo informa se alimento é saudável.")
     st.markdown("### Modelos acessados via Groq.")
     st.markdown("### Exemplo:")
     # Usando HTML para centralizar a imagem
