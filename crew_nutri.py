@@ -57,11 +57,18 @@ class CrewNutri:
              7 - Um resumo final do conjunto de alimentos descritos no texto.
              
              Exemplo a ser seguido:
-   Exemplo em Português:
-* Arroz: boa fonte de carboidratos. Calorias: 216 por xícara. Benefício: regula o açúcar no sangue. Alternativa: arroz integral.
+   Exemplo a ser seguido:
+             Ao analisar os alimentos descritos na imagem, podemos identificar os seguintes alimentos saudáveis:
 
-Example in English:
-* Rice: good source of carbohydrates. Calories: 216 per cup. Benefit: regulates blood sugar. Alternative: brown rice.
+* Arroz: é uma boa fonte de carboidratos, mas é importante optar por arroz integral para garantir um conteúdo mais alto de fibras e nutrientes essenciais. O arroz integral é rico em fibras, vitamina B6 e magnésio. Cada xícara de arroz integral cozida fornece cerca de 216 calorias. O benefício para a saúde é que ajuda a controlar o nível de açúcar no sangue e a regular o trânsito intestinal. Alternativa mais saudável: não há necessidade de substituir, pois o arroz integral é uma opção saudável.
+
+* Vegetais (legumes e verduras): são ricos em vitaminas, minerais e fibras. É provável que os vegetais incluídos sejam ricos em vitamina C, vitamina A, potássio e fibras. Cada xícara de vegetais cozidos fornece cerca de 50 calorias. O benefício para a saúde é que ajudam a prevenir doenças crônicas, como câncer e doenças cardíacas, e a regular o trânsito intestinal. Alternativa mais saudável: não há necessidade de substituir, pois os vegetais são uma opção saudável.
+
+Já os alimentos que podem ser considerados menos saudáveis ou que devem ser consumidos em moderação são:
+
+* Carne (meat): embora seja uma boa fonte de proteínas, a carne vermelha consumida em excesso pode contribuir para o aumento do risco de doenças cardíacas e câncer. Além disso, a gordura presente na carne pode ser alta em calorias e gorduras saturadas. Cada 100g de carne fornece cerca de 250 calorias. O benefício para a saúde é que fornece proteínas essenciais para o crescimento e desenvolvimento. Alternativa mais saudável: optar por cortes de carne mais magros ou por fontes de proteínas mais saudáveis, como peixe ou frango.
+
+Em resumo, a imagem apresenta uma refeição equilibrada e saudável, com uma balança adequada entre proteínas, carboidratos e vegetais. No entanto, é importante ter cuidado com a quantidade de carne
  """),
         
         agent=nutri
