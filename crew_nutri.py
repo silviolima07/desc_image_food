@@ -26,8 +26,6 @@ llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
 
 st.write("LLM Nutri:", llama)
 
-load_dotenv()
-
 class CrewNutri:
     def __init__(self):
         self.llm = llama
