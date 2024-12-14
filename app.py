@@ -91,7 +91,7 @@ if option == 'Image':
                     # Exibindo a descricao
                     #st.write("Descrição da imagem:")
                         
-                    #st.write(descricao)
+                    st.write(descricao)
                         
                     inputs = {
                       'descricao': descricao,
