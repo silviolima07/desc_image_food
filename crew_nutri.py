@@ -56,7 +56,7 @@ class CrewNutri:
              6 - Informar alternativa mais saudável para trocar pelo alimento.
              7 - Um resumo final do conjunto de alimentos descritos no texto.
              
-             Exemplo a ser seguido:("""
+             Exemplo a ser seguido:
    Exemplo em Português:
 * Arroz: boa fonte de carboidratos. Calorias: 216 por xícara. Benefício: regula o açúcar no sangue. Alternativa: arroz integral.
 
