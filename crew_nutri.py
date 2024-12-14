@@ -28,7 +28,7 @@ llama = 'groq/llama-3.2-3b-preview'
 
 class CrewNutri:
     def __init__(self):
-        self.llm = llama
+        #self.llm = llama
         self.crew = self._criar_crew()
 
     def _criar_crew(self):
