@@ -85,6 +85,13 @@ if option == 'Image':
 
         st.write("LLM Multi Modal to describe image:", llama_mm)    
         st.write("LLM Nutri to answer:", llama.model)
+
+        if idioma == "Portuguese":
+                            st.markdown("### É saudável ou não ?")
+                            answer = 'Resultado da Análise'
+                        else:
+                            st.markdown("### Junk food or Health food ?")
+                            answer = "Analysis Result"               
     
         st.write(" ")
 
@@ -107,12 +114,12 @@ if option == 'Image':
                     # Executando a crew
                     answer = "None food in image"
                     if descricao.lower() != answer.lower():
-                        if idioma == "Portuguese":
-                            st.markdown("### É saudável ou não ?")
-                            answer = 'Resultado da Análise'
-                        else:
-                            st.markdown("### Junk food or Health food ?")
-                            answer = "Analysis Result"                            
+                        #if idioma == "Portuguese":
+                        #    st.markdown("### É saudável ou não ?")
+                        #    answer = 'Resultado da Análise'
+                        #else:
+                        #    st.markdown("### Junk food or Health food ?")
+                        #    answer = "Analysis Result"                            
                         
                         resultado = executar_crew(crew_nutricao, inputs)
                         #result_text = resultado.raw
