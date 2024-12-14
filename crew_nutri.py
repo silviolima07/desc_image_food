@@ -42,7 +42,6 @@ class CrewNutri:
         name='analise_imagem',
         description= dedent("""
         Análise os alimentos na descrição: {descricao}.
-        Resposta deve ser dada no idioma {idioma}, mesmo que o exemplo esteja em outro idioma.
         Informar o que é saudável ou não.
         """),
         expected_output=dedent(
