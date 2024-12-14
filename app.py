@@ -78,6 +78,8 @@ if option == 'Image':
         st.write(" ")
         
         idioma = selecionar_idioma()
+
+        st.write("LLM Multi Modal:", llama_mm)    
     
         st.write(" ")
 
