@@ -46,7 +46,7 @@ class CrewNutri:
         """),
         expected_output=dedent(
         """
-             Texto claro, em {idioma}.         
+             Texto claro, traduzido em {idioma}.         
              Um relatório detalhado com:            
              1 - Alimentos identificados na descrição;
              2 - Identificar as vitaminas presentes em cada alimento;
