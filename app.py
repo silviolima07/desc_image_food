@@ -134,6 +134,11 @@ if option == 'About':
     prato = Image.open(image_path)
     # Getting the base64 string
     base64_image = encode_image(image_path)
+       
+    #st.sidebar.image(prato,caption="",use_container_width=True)
+    st.markdown("### Dois agentes: um agente especialista em imagens, usando um modelo multimodal, descreve a imagem, focando apenas em alimentos. A descrição é analisada por agente nutricionista, que informa se alimento é saudável.")
+    st.markdown("### Modelos acessados via Groq.")
+    st.markdown("### Exemplo:")
     # Usando HTML para centralizar a imagem
     st.markdown(
         f"""
@@ -142,11 +147,7 @@ if option == 'About':
         </div>
         """,
         unsafe_allow_html=True
-    )    
-    st.sidebar.image(prato,caption="",use_container_width=True)
-    st.markdown("### Dois agentes: um agente especialista em imagens, usando um modelo multimodal, descreve a imagem, focando apenas em alimentos. A descrição é analisada por agente nutricionista, que informa se alimento é saudável.")
-    st.markdown("### Modelos acessados via Groq.")
-    st.markdown("### Exemplo:")
+    )     
     st.write("""
     Ao analisar os alimentos descritos na imagem, podemos identificar os seguintes alimentos:
 
