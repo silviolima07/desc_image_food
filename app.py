@@ -12,8 +12,6 @@ llama_mm = 'llama-3.2-11b-vision-preview' # Modelo Multi Modal para ler a imagem
 
 llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
 
-st.write("LLM Nutri:", llama.model)
-
 from crew_nutri import CrewNutri
 
 crew_nutricao = CrewNutri()
@@ -83,7 +81,8 @@ if option == 'Image':
         
         idioma = selecionar_idioma()
 
-        st.write("LLM Multi Modal:", llama_mm)    
+        st.write("LLM Multi Modal to describe image:", llama_mm)    
+        st.write("LLM Nutri to answer:", llama.model)
     
         st.write(" ")
 
