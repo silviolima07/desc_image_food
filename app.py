@@ -112,8 +112,8 @@ if option == 'Image':
                       'idioma': idioma}
             
                     # Executando a crew
-                    answer = "None food in image"
-                    if descricao.lower() != answer.lower():
+                    answer_desc = "None food in image"
+                    if descricao.lower() != answer_desc.lower():
                         #if idioma == "Portuguese":
                         #    st.markdown("### É saudável ou não ?")
                         #    answer = 'Resultado da Análise'
