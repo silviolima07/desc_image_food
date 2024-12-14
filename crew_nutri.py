@@ -15,13 +15,13 @@ load_dotenv()
 
 # Obter a chave da API GROQ
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+#OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-st.write("OPEN_AI_KEY: ",OPENAI_API_KEY)
+#st.write("OPEN_AI_KEY: ",OPENAI_API_KEY)
  
 client = Groq(api_key=GROQ_API_KEY)
 
-gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
+#gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
 llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
 
 load_dotenv()
