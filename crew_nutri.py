@@ -8,7 +8,7 @@ from textwrap import dedent
 
 from MyLLM import MyLLM
 
-from groq import Groq
+#from groq import Groq
 
 # Carregar variáveis de ambiente
 #load_dotenv()
@@ -16,7 +16,6 @@ from groq import Groq
 # Obter a chave da API GROQ
 #GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
-#gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
 llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
 
 class CrewNutri:
