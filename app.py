@@ -81,7 +81,9 @@ if option == 'Image':
     """)
         st.write(" ")
         
-        idioma = selecionar_idioma()
+        #idioma = selecionar_idioma()
+        idioma = 'Portuguese'
+            
 
         st.write("LLM Multi Modal to describe image:", llama_mm)    
         st.write("LLM Nutri to answer:", llama.model)
