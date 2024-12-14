@@ -73,6 +73,10 @@ if option == 'Image':
     Always considering only foods present in the image.
     
     Never describe cars, trucks,  places in image, focus on foods only.
+
+    Never turn a description where there is no food or drink.
+
+    Never answer describing people and children or animals.
     
     If the image contains no food, respond only with the phrase: 'None food in image.'
     
