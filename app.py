@@ -91,7 +91,7 @@ if option == 'Image':
             if idioma == "Portuguese":
                 html_page_pergunta = """
 <div style="background-color:black;padding=30px">
-        <p style='text-align:center;font-size:30px;font-weight:bold; color:black'>É saudável ou não?</p>
+        <p style='text-align:center;font-size:30px;font-weight:bold; color:white'>É saudável ou não?</p>
 </div>
 """               
                 st.markdown(html_page_pergunta, unsafe_allow_html=True)
