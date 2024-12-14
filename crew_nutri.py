@@ -24,11 +24,9 @@ st.write("OPENAI_API_KEY: ",OPENAI_API_KEY)
 
 #gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
 llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
-#llama = 'groq/llama-3.2-3b-preview'
 
 class CrewNutri:
     def __init__(self):
-        self.llm = llama
         self.crew = self._criar_crew()
 
     def _criar_crew(self):
