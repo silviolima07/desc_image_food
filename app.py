@@ -7,8 +7,12 @@ from groq import Groq
 import os
 from utils import encode_image, image_to_text, selecionar_idioma, executar_crew
 
-gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
+#gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
 llama_mm = 'llama-3.2-11b-vision-preview' # Modelo Multi Modal para ler a imagem e descrever
+
+llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
+
+st.write("LLM Nutri:", llama)
 
 from crew_nutri import CrewNutri
 
