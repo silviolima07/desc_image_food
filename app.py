@@ -133,8 +133,8 @@ if option == 'Image':
             
 if option == 'About':
     prato = Image.open("img/prato.png")
-    st.sidebar.image(prato,caption="",use_column_width=True)
-    st.markdown("### A partir da descrição da imagem feita por um agente especialista, usando um modelo multimodal e um agente nutricionista, com modelo llama que informa se alimento é saudável.")
+    st.sidebar.image(prato,caption="",use_container_width=True)
+    st.markdown("### Dois agentes: um agente especialista em imagens, usando um modelo multimodal, descreve a imagem, focando apenas em alimentos. A descrição é analisada por agente nutricionista, que informa se alimento é saudável.")
     st.markdown("### Modelos acessados via Groq.")
     st.markdown("### Exemplo:")
     st.write("""
