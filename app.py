@@ -130,7 +130,19 @@ if option == 'Image':
                     st.error(f"Houston we have a problem.")   
             
 if option == 'About':
-    prato = Image.open("img/prato.png")
+    image_path="img/prato.png"    
+    prato = Image.open(image_path)
+    # Getting the base64 string
+    base64_image = encode_image(image_path)
+    # Usando HTML para centralizar a imagem
+    st.markdown(
+        f"""
+        <div style="display: flex; justify-content: center;">
+            <img src="data:image/png;base64,{base64_image}" alt="Imagem" style="width: 80%; height: auto;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )    
     st.sidebar.image(prato,caption="",use_container_width=True)
     st.markdown("### Dois agentes: um agente especialista em imagens, usando um modelo multimodal, descreve a imagem, focando apenas em alimentos. A descrição é analisada por agente nutricionista, que informa se alimento é saudável.")
     st.markdown("### Modelos acessados via Groq.")
