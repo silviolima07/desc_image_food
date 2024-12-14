@@ -87,11 +87,11 @@ if option == 'Image':
         st.write("LLM Nutri to answer:", llama.model)
 
         if idioma == "Portuguese":
-                            st.markdown("### É saudável ou não ?")
-                            answer = 'Resultado da Análise'
-                        else:
-                            st.markdown("### Junk food or Health food ?")
-                            answer = "Analysis Result"               
+            st.markdown("### É saudável ou não ?")
+            answer = 'Resultado da Análise'
+        else:
+            st.markdown("### Junk food or Health food ?")
+            answer = "Analysis Result"               
     
         st.write(" ")
 
