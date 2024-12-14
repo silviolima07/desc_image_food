@@ -23,8 +23,7 @@ client = Groq(api_key=GROQ_API_KEY)
 
 #gpt = MyLLM.GPT4o_mini # model='gpt-4o-mini'
 llama = MyLLM.GROQ_LLAMA # model='groq/llama-3.2-3b-preview'
-
-st.write("LLM Nutri:", llama)
+llama = llama.model
 
 class CrewNutri:
     def __init__(self):
