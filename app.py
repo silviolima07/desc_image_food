@@ -151,7 +151,7 @@ if option == 'About':
         unsafe_allow_html=True
     )  
     st.write(" ")     
-    st.markdown("""###
+    st.markdown("###
     Ao analisar os alimentos na imagem, podemos identificar os seguintes alimentos:
 
 Arroz: não há informações explicitas sobre os nutrientes contidos na descrição, mas como o arroz tem sua classificação em diferentes tipos como, arroz branco e arroz integral, ele contém carboidratos no calórico de 130 e fibras como o RIAI. O benefício para a saúde é que ajuda a controlar o nível de açúcar no sangue e a regular o trânsito intestinal. Alternativa mais saudável: no caso de que você optar pelo arroz integral, pois possui 100 calorias e 2gr de fibras por 100gr.
@@ -168,4 +168,4 @@ Como mencionado nos alimentos saudáveis citidos, torna-se difícil de saber qua
 Um resumo final:
 
 Relembrando, a avaliação acima pode variar dependendo do tipo de vegetal. Em definitivo, verificado isso faz com que os alimentos possam ou não ser saudáveis.
-    .""")                
+    .")                
