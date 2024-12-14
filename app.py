@@ -151,8 +151,8 @@ if option == 'About':
         unsafe_allow_html=True
     )  
     st.write(" ")     
-    st.markdown("### Ao analisar os alimentos na imagem, podemos identificar os seguintes alimentos:)    
-    st.markdown("""
+    st.markdown("### Ao analisar os alimentos na imagem, podemos identificar os seguintes alimentos:")    
+    st.write("""
 Arroz: não há informações explicitas sobre os nutrientes contidos na descrição, mas como o arroz tem sua classificação em diferentes tipos como, arroz branco e arroz integral, ele contém carboidratos no calórico de 130 e fibras como o RIAI. O benefício para a saúde é que ajuda a controlar o nível de açúcar no sangue e a regular o trânsito intestinal. Alternativa mais saudável: no caso de que você optar pelo arroz integral, pois possui 100 calorias e 2gr de fibras por 100gr.
 
 Vegetais (legumes e verduras): como a descrição, não haver informações sobre os vegetais contidos, os vegetais contém vitaminas, minerais e fibras. Cada xícara de vegetais cozidos fornece cerca de 50 calorias. Mas como na descrição indica, quando se faza desta forma, não se podem dizer qual tipo de vegetal os inclua, mas qual seja ficou para ele ser definido por um especialista. Mas, É provável que os vegetais incluídos sejam ricos em vitamina C, vitamina A, potássio e fibras. O benefício para a saúde é que ajudam a prevenir doenças crônicas, como câncer e doenças cardíacas, e a regular o trânsito intestinal. Alternativa mais saudável: no caso de que você optar pelos vegetais mais probamos saudáveis e menos calórias, pois os vegetais diminuíram as calorias. Porém, como não sabe qual os vegetais inclui a descrição, é difícil identificar qual tipo de vegetal.
