@@ -129,4 +129,26 @@ if option == 'Image':
                 except Exception as e:
                     st.error(f"Ocorreu um erro ao executar a crew: {e}")
     except Exception as e:
-                    st.error(f"Houston we have a problem.")                
+                    st.error(f"Houston we have a problem.")   
+            
+if option == 'About':
+    prato = Image.open("img/prato.png")
+    st.sidebar.image(prato,caption="",use_column_width=True)
+    st.markdown("### A partir da descrição da imagem feita por um agente especialista, usando um modelo multimodal e um agente nutricionista, com modelo llama que informa se alimento é saudável.")
+    st.markdown("### Modelos acessados via Groq.")
+    st.markdown("### Exemplo:")
+    st.write("""
+    Ao analisar os alimentos descritos na imagem, podemos identificar os seguintes alimentos saudáveis:
+
+* Salada com alface, tomate e cenoura: a alface é rica em fibras e vitamina A, enquanto os tomates fornecem vitamina C e lycopene, e as cenouras são ricas em vitamina A e fibras.
+* Tomates: ricos em vitamina C e lycopene, um antioxidante que ajuda a prevenir doenças crônicas.
+* Cenouras: são ricas em vitamina A e fibras, importante para a saúde dos olhos e do sistema imunológico.
+
+Já os alimentos que podem ser considerados menos saudáveis ou que devem ser consumidos em moderação são:
+
+* Carne (beef e sausage): embora sejam boas fontes de proteínas, a carne vermelha consumida em excesso pode contribuir para o aumento do risco de doenças cardíacas e câncer. Além disso, a gordura presente na carne pode ser alta em calorias e gorduras saturadas. O consumo exagerado de sausage também pode levar ao consumo excessivo de sódio e preservantes.
+* Arroz: embora seja uma boa fonte de carboidratos, o arroz branco refinado pode ser pobre em fibras e nutrientes essenciais. É importante optar por opções mais saudáveis, como arroz integral.
+Em resumo, a imagem apresenta uma refeição equilibrada, com uma balança adequada entre proteínas, 
+carboidratos e vegetais. No entanto, é importante ter cuidado com a quantidade de carne e arroz 
+consumidos e optar por opções mais saudáveis. Além disso, a adição de salsa ao prato pode ser benéfica, 
+pois fornece vitamina C e flavonoides..""")                
