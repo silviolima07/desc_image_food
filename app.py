@@ -79,62 +79,62 @@ if option == 'Image':
     
 }
     """)
-        st.write(" ")
+            st.write(" ")
         
-        #idioma = selecionar_idioma()
-        idioma = 'Portuguese'
+            #idioma = selecionar_idioma()
+            idioma = 'Portuguese'
             
 
-        st.write("LLM Multi Modal to describe image:", llama_mm)    
-        st.write("LLM Nutri to answer:", llama.model)
+            st.write("LLM Multi Modal to describe image:", llama_mm)    
+            st.write("LLM Nutri to answer:", llama.model)
 
-        if idioma == "Portuguese":
-            st.markdown("### É saudável ou não ?")
-            answer = 'Resultado da Análise'
-        else:
-            st.markdown("### Junk food or Health food ?")
-            answer = "Analysis Result"               
+            if idioma == "Portuguese":
+                st.markdown("### É saudável ou não ?")
+                answer = 'Resultado da Análise'
+            else:
+                st.markdown("### Junk food or Health food ?")
+                answer = "Analysis Result"               
     
-        st.write(" ")
+            st.write(" ")
 
-        # Botão para iniciar o processo
-        if st.button ('Iniciar Processo ') :
-            # Quanto clicar no botão carrega um loader
-            with st.spinner ('Wait for it...we are working...please') :
-                #result = crew_postagem.kickoff ( inputs ={ 'topic': tema })
-                try:
-                    descricao = image_to_text(client, llama_mm, base64_image, prompt)
-                    # Exibindo a descricao
-                    #st.write("Descrição da imagem:")
+            # Botão para iniciar o processo
+            if st.button ('Iniciar Processo ') :
+                # Quanto clicar no botão carrega um loader
+                with st.spinner ('Wait for it...we are working...please') :
+                    #result = crew_postagem.kickoff ( inputs ={ 'topic': tema })
+                    try:
+                        descricao = image_to_text(client, llama_mm, base64_image, prompt)
+                        # Exibindo a descricao
+                        #st.write("Descrição da imagem:")
                         
-                    #st.write(descricao)
+                        #st.write(descricao)
                         
-                    inputs = {
+                        inputs = {
                       'descricao': descricao,
                       'idioma': idioma}
             
-                    # Executando a crew
-                    answer_desc = "None food in image"
-                    if descricao.lower() != answer_desc.lower():
-                        #if idioma == "Portuguese":
-                        #    st.markdown("### É saudável ou não ?")
-                        #    answer = 'Resultado da Análise'
-                        #else:
-                        #    st.markdown("### Junk food or Health food ?")
-                        #    answer = "Analysis Result"                            
+                        # Executando a crew
+                        answer_desc = "None food in image"
+                        if descricao.lower() != answer_desc.lower():
+                            #if idioma == "Portuguese":
+                            #    st.markdown("### É saudável ou não ?")
+                            #    answer = 'Resultado da Análise'
+                            #else:
+                            #    st.markdown("### Junk food or Health food ?")
+                            #    answer = "Analysis Result"                            
                         
-                        resultado = executar_crew(crew_nutricao, inputs)
-                        #result_text = resultado.raw
-                        st.markdown("### "+ answer)
-                        st.write(resultado)
-                        # Exibindo o texto com um tamanho de fonte maior
-                        # Substituindo quebras de linha por <br> e aplicando o estilo a todo o texto
-                        #st.markdown(f"<div style='font-size:23px'>{result_text.replace(chr(10), '<br>')}</div>", unsafe_allow_html=True)
-                    else:
-                        st.markdown("### "+descricao)
+                            resultado = executar_crew(crew_nutricao, inputs)
+                            #result_text = resultado.raw
+                            st.markdown("### "+ answer)
+                            st.write(resultado)
+                            # Exibindo o texto com um tamanho de fonte maior
+                            # Substituindo quebras de linha por <br> e aplicando o estilo a todo o texto
+                            #st.markdown(f"<div style='font-size:23px'>{result_text.replace(chr(10), '<br>')}</div>", unsafe_allow_html=True)
+                        else:
+                            st.markdown("### "+descricao)
                         
-                except Exception as e:
-                    st.error(f"Ocorreu um erro ao executar a crew: {e}")
+                    except Exception as e:
+                        st.error(f"Ocorreu um erro ao executar a crew: {e}")
     except Exception as e:
                     st.error(f"Houston we have a problem.")   
             
