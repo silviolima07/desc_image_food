@@ -110,9 +110,9 @@ if option == 'Image':
                     try:
                         descricao = image_to_text(client, llama_mm, base64_image, prompt)
                         # Exibindo a descricao
-                        #st.write("Descrição da imagem:")
+                        st.write("Descrição da imagem:")
                         
-                        #st.write(descricao)
+                        st.write(descricao)
                         
                         inputs = {
                       'descricao': descricao,
