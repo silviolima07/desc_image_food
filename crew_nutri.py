@@ -42,11 +42,12 @@ class CrewNutri:
         name='analise_imagem',
         description= dedent("""
         Análise os alimentos na descrição: {descricao}.
+        Resposta deve ser dada no idioma {idioma}.
         Informar o que é saudável ou não.
         """),
         expected_output=dedent(
         """
-             Texto claro, traduzido em {idioma}.         
+             Texto claro e resumido, no maximo 1000 tokens.       
              Um relatório detalhado com:            
              1 - Alimentos identificados na descrição;
              2 - Identificar as vitaminas presentes em cada alimento;
