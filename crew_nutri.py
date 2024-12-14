@@ -16,7 +16,7 @@ load_dotenv()
 # Obter a chave da API GROQ
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-
+st.write("CrewNutri")
 st.write("GROQ_API_KEY: ",GROQ_API_KEY)
 st.write("OPENAI_API_KEY: ",OPENAI_API_KEY)
  
