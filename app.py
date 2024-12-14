@@ -102,7 +102,7 @@ if option == 'Image':
                     if descricao.lower() != answer.lower():
                         if idioma == "Portuguese":
                             st.markdown("### É saudável ou não ?")
-                            answer = 'Resultado da Análse'
+                            answer = 'Resultado da Análise'
                         else:
                             st.markdown("### Junk food or Health food ?")
                             answer = "Analysis Result"                            
